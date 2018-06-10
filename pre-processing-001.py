@@ -5,29 +5,30 @@
     Software: Pre-Processing-01
     
     Description: 
-        - Processa todos arquivos, dos diretórios neg_ e pos_ do dataset que contem os registros
+        1º - Processa todos arquivos, dos diretórios neg_ e pos_ do dataset que contem os registros
          já separados em arquivos .TXT;
 
-        - Converte todos para caracteres minusculos;
+        2º - Converte todos para caracteres minusculos;
 
-        - Remove caracteres numéricos;
+        3º - Remove caracteres numéricos;
 
-        - Remove caracteres especiais;
+        4º - Remove caracteres especiais;
 
-        - Remove stopwords usando uma lista de stopwords;
+        5º - Remove stopwords usando uma lista de stopwords;
 
-        - Stemmer reduz a raiz das palavras;
+        6º - Stemmer reduz a raiz das palavras;
 
-        - Remove palavras que contenha menos de 4 catacteres.
+        7º - Remove palavras que contenha menos de 4 catacteres.
 
-        - Adicionar rótulos: "1" positivos ou "0" negativo para cada arquivo.
-        - Remove lixo gerado;
+        8º - Adicionar rótulos: "1" positivos ou "0" negativo para cada arquivo.
+        
+        9º - Remove lixo gerado;
 
-        - Juntar todos os dados em um único arquivo. Sendo assim, um novo dataser é gerado com o 
+        10º - Juntar todos os dados em um único arquivo. Sendo assim, um novo dataser é gerado com o 
          dados para treinamento contendo n linhas "documentos" e 2 colunas, sendo que na 1ª coluna
          as palavras e na 2ª coluna o rótulo;
 
-        - Pega o dataset de treinamento gerado e com base nele gera um novo dataset para teste 
+        10º - Pega o dataset de treinamento gerado e com base nele gera um novo dataset para teste 
           "sem rótulos". 
     
     Register: 21/05/2018
