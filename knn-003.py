@@ -46,7 +46,7 @@ from sklearn.feature_extraction.text import TfidfTransformer
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-path_root = '/home/rodriguesfas/Workspace/k-nn/data/out/'
+path_root = '/home/rodriguesfas/Workspace/My-K-NN/data/out/'
 
 path_dataset_input = path_root + 'generated-polarity-data.csv'
 path_dataset_predictions = path_root + 'generated-polarity-predictions-data.csv'
@@ -120,7 +120,7 @@ def load_dataset(path_dataset):
     LOG('Removing stoplist..')
     df['document'] = df['document'].apply(lambda x: remove_stopword_list(x))
     LOG('Stemming..')
-    # df['document'] = df['document'].apply(lambda x: stemmer(x))
+    df['document'] = df['document'].apply(lambda x: stemmer(x))
     LOG('Removing too short words..')
     df['document'] = df['document'].apply(lambda x: remove_very_small_words(x))
     LOG('Shuffling Positive and Negative Data..')

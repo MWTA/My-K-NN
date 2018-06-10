@@ -42,7 +42,7 @@ from sklearn.feature_extraction.text import TfidfTransformer
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-path_root = '/home/rodriguesfas/Workspace/k-nn/data/out/'
+path_root = '/home/rodriguesfas/Workspace/My-K-NN/data/out/'
 
 path_data = path_root + 'generated-polarity-train.csv'
 path_data_result = path_root + 'generated-polarity-predictions.csv'

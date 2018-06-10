@@ -52,7 +52,7 @@ reload(sys)
 sys.setdefaultencoding('utf-8')
 
 
-path_root = '/home/rodriguesfas/Workspace/k-nn/data/'
+path_root = '/home/rodriguesfas/Workspace/My-K-NN/data/'
 path_dataset = 'polarity-detection-200-reviews/'
 
 path_neg = 'neg_100/'
