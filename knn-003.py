@@ -197,7 +197,7 @@ def calcular_accuracy(testSet, dataset_predictions):
 
 def graph_accuracy():
 
-    x = [1, 2, 3, 4, 5, 6, 7, 8] 
+    x = [1, 2, 3, 4, 5, 6, 7, 8]
 
     # plotting the points
     plt.plot(x, accuracy, color='green', linestyle='dashed', linewidth=3,
@@ -226,6 +226,7 @@ def main():
     test_array = tfidf_test.toarray()
 
     for j in range(2, 10):
+        break
         dataset_predictions = open(path_dataset_predictions, 'w')
         index = 0
         for document in test_array:
@@ -241,8 +242,8 @@ def main():
         accuracy.append(ac)
         print('Accuracy: ' + repr(ac) + '%')
 
-    graph_accuracy()
-    print accuracy
+    # graph_accuracy()
+    #print accuracy
     LOG('Finalized!')
 
 
